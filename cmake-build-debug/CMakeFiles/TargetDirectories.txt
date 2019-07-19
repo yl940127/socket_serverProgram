@@ -1,0 +1,6 @@
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/alloc.dir
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/client.dir
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/HelloSocket.dir
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/server.dir

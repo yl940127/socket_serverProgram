@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/yl/CLionProjects/socket_serverProgram/CELLTimestamp.h
+chrono
+-
+
+/home/yl/CLionProjects/socket_serverProgram/EasyTcpClient.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+unistd.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+errno.h
+-
+MessageHeader.h
+/home/yl/CLionProjects/socket_serverProgram/MessageHeader.h
+
+/home/yl/CLionProjects/socket_serverProgram/MessageHeader.h
+
+/home/yl/CLionProjects/socket_serverProgram/client.cpp
+EasyTcpClient.h
+/home/yl/CLionProjects/socket_serverProgram/EasyTcpClient.h
+CELLTimestamp.h
+/home/yl/CLionProjects/socket_serverProgram/CELLTimestamp.h
+thread
+-
+atomic
+-
+

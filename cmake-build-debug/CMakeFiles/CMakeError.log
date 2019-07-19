@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ff798/fast 
+/usr/bin/make -f CMakeFiles/cmTC_ff798.dir/build.make CMakeFiles/cmTC_ff798.dir/build
+make[1]: Entering directory '/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff798.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_ff798.dir/CheckSymbolExists.c.o   -c /home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ff798
+/home/yl/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff798.dir/link.txt --verbose=1
+/usr/bin/cc      CMakeFiles/cmTC_ff798.dir/CheckSymbolExists.c.o  -o cmTC_ff798 
+CMakeFiles/cmTC_ff798.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x16)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ff798.dir/build.make:86: recipe for target 'cmTC_ff798' failed
+make[1]: *** [cmTC_ff798] Error 1
+make[1]: Leaving directory '/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_ff798/fast' failed
+make: *** [cmTC_ff798/fast] Error 2
+
+File /home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_59b62/fast 
+/usr/bin/make -f CMakeFiles/cmTC_59b62.dir/build.make CMakeFiles/cmTC_59b62.dir/build
+make[1]: Entering directory '/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_59b62.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_59b62.dir/CheckFunctionExists.c.o   -c /home/yl/clion-2019.1.4/bin/cmake/linux/share/cmake-3.14/Modules/CheckFunctionExists.c
+Linking C executable cmTC_59b62
+/home/yl/clion-2019.1.4/bin/cmake/linux/bin/cmake -E cmake_link_script CMakeFiles/cmTC_59b62.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_59b62.dir/CheckFunctionExists.c.o  -o cmTC_59b62 -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_59b62.dir/build.make:86: recipe for target 'cmTC_59b62' failed
+make[1]: *** [cmTC_59b62] Error 1
+make[1]: Leaving directory '/home/yl/CLionProjects/socket_serverProgram/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_59b62/fast' failed
+make: *** [cmTC_59b62/fast] Error 2
+
+
